@@ -11,8 +11,8 @@
 ```javascript
 > Variables		        > Conditionals
 > Nesting		        > Inheritance
-> Partials / Imports	> Operators & Calculations
-> Functions & Mixins	> Color Functions
+> Partials / Imports		> Operators & Calculations
+> Functions & Mixins		> Color Functions
 ```
 
 **There are two different extension you will encounter when using SASS**
@@ -23,15 +23,15 @@
 
 **DIFFERENCES between .sass and .scss**
 ```scss
-SASS					            SCSS
-$color: red                         $color: #f00;
-$color2: lime				        $color2: #0f0;
-a					                a {
-	color: $color				        color: $color;
-	&:hover					            &:hover {
-		color: $color2				        color: $color2;
-						                }
-					                }
+SASS				SCSS				CSS
+$color: red                    	$color: #f00;			a {
+$color2: lime			$color2: #0f0;			   color: red;		
+a				a {				}
+   color: $color		   color: $color;		a:hover {
+   &:hover			   &:hover {			   color: lime;
+      color: $color2		      color: $color2;		}
+				   }
+			  	}
 ```
 
 ## 1. Create your first sass app
