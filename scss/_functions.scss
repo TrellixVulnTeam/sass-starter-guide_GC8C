@@ -1,0 +1,24 @@
+// The main difference between a function and a mixin is a function actually returns something, you have to use the return keyword. A mixin is just basically a set of styles that you want to include.
+
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin transform($property) {
+    --webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+
+/* SOME PRE DEFINED FUNCTIONS ON SASSS
+
+lightness($color)
+darken($color, %percentage)
+lighten($color, %percentage)
+
+*/
