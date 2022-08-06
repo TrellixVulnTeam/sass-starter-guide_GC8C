@@ -5,7 +5,7 @@
 * ***CSS Pre-processor / CSS ön-derleyici*** 
 * ***NPM SASS module***
 * ***Koala-App***
-*( You can use this interfaced app for compiling Sass or Less instead of npm sass node module, but I really suggest you to use npm sass though. )*
+*( You can use this interfaced app for compiling Sass instead of npm sass node module. )*
 
 **What it does SASS offer?**
 ```javascript
